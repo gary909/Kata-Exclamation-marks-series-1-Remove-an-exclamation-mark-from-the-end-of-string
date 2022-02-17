@@ -1,9 +1,10 @@
 function remove (string) {
-    //coding and coding....
-    return '';
+    const last = string.charAt(string.length - 1); //Find last char
+    if (last == "!"){ // if last char = '!' then do this...
+        return string.slice(0, -1); //lop of the end
+    }
+    return string; // else return the string unchanged
 }
-
-//str = str.substring(0, str.length() - 1);
 
 console.log(remove("Hi!")); // return "Hi"
 console.log(remove("Hi!!!")); // return "Hi!!"
